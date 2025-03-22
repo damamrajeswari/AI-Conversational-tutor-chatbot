@@ -4,7 +4,6 @@
 
 🔗 [AI Conversational Tutor Chatbot](https://ai-conversational-data-science-tutor-chatbot.streamlit.app)
 
-
 [![Alt Text](images/login.png)](https://ai-conversational-data-science-tutor-chatbot.streamlit.app)
 [![Alt Text](images/home.png)](https://ai-conversational-data-science-tutor-chatbot.streamlit.app)
 [![Alt Text](images/about.png)](https://ai-conversational-data-science-tutor-chatbot.streamlit.app)
@@ -31,18 +30,22 @@ The **AI Conversational Tutor Chatbot** is an AI-powered application designed to
 
 ## Project Structure
 
+```
 AI-Conversational-Tutor-Chatbot/
 │── .streamlit/              # Streamlit configuration
+│   ├── config.toml          # UI settings (if needed)
 │   ├── secrets.toml         # Secure API keys (ignored from version control)
 │── pages/                   # Additional Streamlit pages
 │   ├── about.py             # About page
 │   ├── home.py              # Home page
 │── db_utils.py              # Database management functions
+│── main.py                  # Streamlit app entry point
 │── requirements.txt         # Python dependencies
 │── signin.py                # User authentication logic
 │── README.md                # Project documentation
 │── .gitignore               # Files ignored from version control
-
+│── .env                     # API keys (ignored from GitHub)
+```
 
 ## Installation & Setup
 
@@ -53,15 +56,13 @@ git clone https://github.com/damamrajeswari/AI-Conversational-tutor-chatbot.git
 cd AI-Conversational-tutor-chatbot
 ```
 
-
-### 3️⃣ Install Dependencies
+### 2️⃣ Install Dependencies
 
 ```bash
 pip install -r requirements.txt
 ```
 
-
-### 5️⃣ Run the Application
+### 3️⃣ Run the Application
 
 ```bash
 streamlit run main.py
@@ -74,8 +75,6 @@ streamlit run main.py
 3. **Continue Learning**: The chatbot maintains context for ongoing discussions.
 4. **Log Out**: Securely end your session when done.
 
-
-
 ## Contributing
 
 1. Fork the repository.
@@ -84,7 +83,7 @@ streamlit run main.py
 4. Push to the branch.
 5. Open a Pull Request.
 
-
 ---
 
-📩 **Contact**: [rajeswaridamam007@gmail.com](mailto\:rajeswaridamam007@gmail.com)
+📩 **Contact**: [rajeswaridamam007@gmail.com](mailto:rajeswaridamam007@gmail.com)
+
