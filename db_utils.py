@@ -75,26 +75,6 @@ def get_user_sessions(conn, email):
         return []  # Return an empty list if there is an error
 
 
-# def get_session_summary(conn, session_id):
-#     cursor = conn.cursor()
-#     cursor.execute("SELECT user_message, ai_response FROM chat_history WHERE session_id = ?", (session_id,))
-#     chat_history = cursor.fetchall()
-
-#     if not chat_history:
-#         return "Empty Session"
-
-#     # Extract the first user message and the last AI response
-#     first_message = chat_history[0][0]  # First user message
-#     last_response = chat_history[-1][1]  # Last AI response
-
-#     # Generate a short title (max 5-6 words)
-#     if len(first_message.split()) <= 8:
-#         title = first_message  # Use first user message if it's short
-#     else:
-#         title = " ".join(first_message.split()[:7]) + "..."  # Trim if too long
-
-#     return title
-
 def get_session_summary(conn, session_id, char_limit=35):
     cursor = conn.cursor()
     cursor.execute("SELECT user_message, ai_response FROM chat_history WHERE session_id = ?", (session_id,))

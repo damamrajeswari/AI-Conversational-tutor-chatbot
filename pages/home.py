@@ -1,15 +1,14 @@
 import streamlit as st
 from langchain_google_genai import ChatGoogleGenerativeAI
-from dotenv import load_dotenv
 import os
 import time
 import uuid
 from db_utils import connect_db, save_chat, get_chat_history, get_user_sessions, get_session_summary, save_new_session
 from system_prompt import get_system_prompt
 
-# ✅ Load environment variables
-load_dotenv()
-api_key = os.getenv("GOOGLE_API_KEY")
+
+
+api_key = GEMINI_API_KEY = st.secrets["api_keys"]["gemini"]
 
 # ✅ Check if API key is available
 if not api_key:
