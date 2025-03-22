@@ -1,0 +1,14 @@
+# Ignore environment variable files
+.env
+
+# Python bytecode
+*.pyc
+__pycache__/
+
+# Virtual environment folder
+env/
+
+# Database files (if using local DB files)
+*.db
+*.sqlite3
+
