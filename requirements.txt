@@ -4,5 +4,4 @@ langchain
 langchain-google-genai
 python-dotenv
 bcrypt
-sqlite3
 
