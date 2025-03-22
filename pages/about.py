@@ -41,7 +41,7 @@ features = [
 for feature in features:
     st.write(feature)
 if st.button("Check out"):
-        st.switch_page("pages/app.py")
+        st.switch_page("pages/home.py")
 
 # Add a little styling (Optional)
 st.markdown("""
