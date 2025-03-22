@@ -11,4 +11,4 @@ env/
 # Database files (if using local DB files)
 *.db
 *.sqlite3
-
+!users.db
