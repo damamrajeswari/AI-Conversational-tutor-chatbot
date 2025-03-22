@@ -1,3 +1,5 @@
+#secret files
+.streamlit/secrets.toml
 
 
 # Python bytecode
